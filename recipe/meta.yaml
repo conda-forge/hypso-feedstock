@@ -37,6 +37,7 @@ requirements:
     - scipy >=1.11.2
     - pillow
     - shapely >=2.0.1
+    - pysftp >=0.2.9
 
 test:
   imports:
