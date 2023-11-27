@@ -1,5 +1,5 @@
 {% set name = "hypso" %}
-{% set version = "1.1.1" %}
+{% set version = "1.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NTNU-SmallSat-Lab/hypso-package/archive/v{{ version }}.tar.gz
-  sha256: 7bde47dc0608d3892a96b6a66a5c970728f38f96d2afcfc67cbb7401bc689cd4
+  sha256: 33ee8c57ae7418c9037e5edc2e791de8cb8c0d6fabb586cad64dfaa0f025779a
 
 build:
   number: 0
@@ -38,6 +38,9 @@ requirements:
     - pillow
     - shapely >=2.0.1
     - pysftp >=0.2.9
+    - tqdm >=4.66.1
+    - astropy >=5.3.4
+    - pyorbital >=1.8.0
 
 test:
   imports:
