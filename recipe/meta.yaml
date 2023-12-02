@@ -1,5 +1,5 @@
 {% set name = "hypso" %}
-{% set version = "1.6.1" %}
+{% set version = "1.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NTNU-SmallSat-Lab/hypso-package/archive/v{{ version }}.tar.gz
-  sha256: cee45fcdae4a880469e499698d9baa21f04ce157e6ca084eadbf9151c7955975
+  sha256: 489232c77ffe34e1496994a20b800b32213e936bdf170291be3e81b8ccf3dfdf
 
 build:
   number: 0
@@ -41,6 +41,10 @@ requirements:
     - astropy >=5.3.4
     - pyorbital >=1.8.0
     - progressbar >=2.5
+    - h5py >=3.8.0
+    - pyhdf >=0.11.3
+    - pyresample >=1.27.1
+    - pygrib >=2.1.4
 
 test:
   imports:
