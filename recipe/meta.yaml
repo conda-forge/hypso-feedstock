@@ -1,5 +1,5 @@
 {% set name = "hypso" %}
-{% set version = "1.8.2" %}
+{% set version = "1.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NTNU-SmallSat-Lab/hypso-package/archive/v{{ version }}.tar.gz
-  sha256: 8b9dc737387ff83667289d545b62873606e2973e9b9abd9ec1f00acd99966e99
+  sha256: 1f0180b8a7c0cc136218909ab91b9f15340f4459f9ea55a6215af69a7523bd84
 
 build:
   number: 0
