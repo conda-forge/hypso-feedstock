@@ -1,5 +1,5 @@
 {% set name = "hypso" %}
-{% set version = "1.9.2" %}
+{% set version = "1.9.3" %}
 
 
 package:
@@ -42,7 +42,6 @@ requirements:
     - requests
     - python-dateutil
     - scikit-learn >=1.3.2
-    - packaging
 
 test:
   imports:
