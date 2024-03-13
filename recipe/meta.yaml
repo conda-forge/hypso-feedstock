@@ -1,5 +1,5 @@
 {% set name = "hypso" %}
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NTNU-SmallSat-Lab/hypso-package/archive/v{{ version }}.tar.gz
-  sha256: 7f2d3bebeb9223994ffd15ec57e01f4516616048bc3c1e6ddfe0bf08ae5ef1b9
+  sha256: 955e2b7e7cafe671c514791b01d41f1dd64cac9f33d79755d0c8ec8711da5fe0
 
 build:
   number: 0
@@ -42,10 +42,11 @@ requirements:
     - requests
     - python-dateutil
     - scikit-learn >=1.4
-    - py-xgboost
+    - py-xgboost-cpu
 
 test:
   imports:
+    - xgboost
     - hypso
   commands:
     - pip check
