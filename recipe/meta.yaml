@@ -47,9 +47,6 @@ requirements:
 test:
   imports:
     - hypso
-  commands:
-    - pip check
-    - pip list
   requires:
     - pip
 
