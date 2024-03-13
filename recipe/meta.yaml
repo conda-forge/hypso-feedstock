@@ -46,7 +46,6 @@ requirements:
 
 test:
   imports:
-    - xgboost
     - hypso
   commands:
     - pip check
