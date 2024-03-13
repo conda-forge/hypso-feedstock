@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NTNU-SmallSat-Lab/hypso-package/archive/v{{ version }}.tar.gz
-  sha256: 5b5d08e97b91b5bd4c7e0178b33d04945b34b65937b37af79ea7bc55e70b78d4
+  sha256: 7f2d3bebeb9223994ffd15ec57e01f4516616048bc3c1e6ddfe0bf08ae5ef1b9
 
 build:
   number: 0
