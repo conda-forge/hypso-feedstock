@@ -11,7 +11,7 @@ source:
   sha256: 733a775b113a4421d3f9dbcc12fa85039d6da3b77472b6e353cd4cce333b9517
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -37,7 +37,7 @@ requirements:
     - pillow
     - shapely >=2.0.1
     - tqdm >=4.66.1
-    - astropy >=5.3.4
+    - astropy-base >=5.3.4
     - progressbar >=2.5
     - requests
     - python-dateutil
