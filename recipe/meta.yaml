@@ -11,18 +11,18 @@ source:
   sha256: 733a775b113a4421d3f9dbcc12fa85039d6da3b77472b6e353cd4cce333b9517
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=61.0
     - setuptools_scm  >=3.4
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.24
     - gdal =3.6.2
     - cartopy >=0.21.1
@@ -50,6 +50,7 @@ test:
     - hypso
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   license: MIT
